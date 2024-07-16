@@ -99,9 +99,13 @@ fun ProductDetailScreen(
                             cartViewModel.addToCart(product)
                             navController.navigateUp()
                         },
-                        modifier = Modifier.size(36.dp)
+                        modifier = Modifier
+                            .size(56.dp)
+                            .align(Alignment.Bottom)
+                            .padding(8.dp),
+                        containerColor = Color(0xFFFF9800)
                     ) {
-                        Icon(Icons.Filled.Add, contentDescription = "Agregar al carrito")
+                        Icon(Icons.Filled.Add, contentDescription = "Agregar al carrito", tint = Color.White)
                     }
                 }
             }
